@@ -9,11 +9,9 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left Panel - 65% width */}
-      <div className="w-[65%] p-8 bg-gray-100">{leftPanel}</div>
+      {leftPanel}
 
-      {/* Right Panel - 35% width */}
-      <div className="w-[35%] p-8 bg-white">{rightPanel}</div>
+      {rightPanel}
       {rest}
     </div>
   );

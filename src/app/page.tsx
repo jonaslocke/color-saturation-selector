@@ -1,9 +1,20 @@
+import { Layout } from "@/components/Layout";
+import { RightPanel } from "~/color-picker/components/RightPanel";
+import { ColorPalettes } from "~/color-picker/components/ColorPalettes";
+import { ColorPicker } from "~/color-picker/components/ColorPicker";
+import { ColorSaturation } from "~/color-picker/components/ColorSaturation";
+import { LeftPanel } from "~/color-picker/components/LeftPanel";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>hello world</h1>
-      </main>
-    </div>
+    <Layout>
+      <LeftPanel>
+        <ColorPicker />
+      </LeftPanel>
+      <RightPanel>
+        <ColorSaturation />
+        <ColorPalettes />
+      </RightPanel>
+    </Layout>
   );
 }

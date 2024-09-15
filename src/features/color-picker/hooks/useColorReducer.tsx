@@ -25,9 +25,9 @@ const colorReducer = (state: ColorState, action: ColorAction): ColorState => {
 };
 
 const initialColorState: ColorState = {
-  hue: 0,
-  saturation: 0,
-  lightness: 0,
+  hue: 10,
+  saturation: 20,
+  lightness: 30,
 };
 
 const useColorReducer = () => {
